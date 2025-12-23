@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+body {
+  background: #f4f6f8;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+.task-title {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+.app-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.app-header h2 {
+  font-weight: 600;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Table */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #f1f3f5;
+}
+
+.table thead th {
+  font-weight: 600;
+  color: #495057;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+  transform: scale(1.005);
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Chips */
+.MuiChip-root {
+  font-weight: 500;
+}
+
+/* Action buttons */
+/*.action-btns .MuiIconButton-root {
+  margin-right: 4px;
+}*/
+
+
+/* Modal */
+.MuiDialog-paper {
+  border-radius: 14px !important;
+}
+
+/* Snackbar */
+.MuiAlert-root {
+  border-radius: 10px;
+}
+
+/* Hide cards on desktop */
+.task-cards {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+ 
+
+  /* Show cards */
+  .task-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .task-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .task-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .task-card-header h6 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .task-desc {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 8px 0;
+  }
+
+  .task-meta {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .action-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* or flex-end */
+    align-items: center;
+    gap: 8px; /* spacing between buttons */
+    white-space: nowrap; /* prevent wrapping */
+  }
+
+  .action-btns .MuiIconButton-root {
+    flex: 0 0 40px; /* fixed width, no shrinking */
+    height: 50px;   /* fixed height */
+    padding: 8px;   /* inner padding */
+    min-width: unset !important; /* remove MUI default min-width */
+  }
+  /*.task-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }*/
+
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
