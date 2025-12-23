@@ -37,39 +37,38 @@ Axios / Fetch API
 
 Git for version control
 
-# How to Run Locally
+## How to Run Locally
 
-## Clone repository
-
+Clone repository:
 git clone https://github.com/SWaRANgi8728/Task-Management.git
 cd Task-Management
 
+Install dependencies  
 
-Install dependencies
-Backend:
-
+**Backend:**
 cd backend
 npm install
-node index.js
+npm start
+# Runs backend locally at http://localhost:5000
 
-
-# Frontend:
-
+**Frontend:**
 cd frontend
 npm install
 npm start
+# Runs frontend locally at http://localhost:3000
 
+---
 
-Open frontend:
-Go to http://localhost:3000
-Backend API runs at http://localhost:5000
+## Backend API (Deployed)
 
-## API Endpoints
+All API endpoints are hosted online on Render:
 
-GET /tasks – Get all tasks
+Base URL:  
+https://task-management-backend-5k2a.onrender.com
 
-POST /tasks – Add a new task
+Endpoints:
 
-PUT /tasks/:id – Update a task
-
-DELETE /tasks/:id – Delete a task
+- GET /tasks – Get all tasks  
+- POST /tasks – Add a new task  
+- PUT /tasks/:id – Update a task  
+- DELETE /tasks/:id – Delete a task
