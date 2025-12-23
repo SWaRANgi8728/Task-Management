@@ -1,5 +1,5 @@
-#Task Management Application
-##Overview
+# Task Management Application
+## Overview
 
 A full-stack Task Management Application where users can add, view, edit, and delete tasks.
 
@@ -9,7 +9,7 @@ Backend: Node.js + Express
 
 Data storage: In-memory array or JSON file
 
-##Features
+## Features
 
 Add, edit, delete tasks
 
@@ -23,7 +23,7 @@ Modal dialogs for task creation and editing
 
 Snackbars for success/error notifications
 
-##Technologies Used
+## Technologies Used
 
 React
 
@@ -37,11 +37,11 @@ Axios / Fetch API
 
 Git for version control
 
-How to Run Locally
+# How to Run Locally
 
-Clone repository
+## Clone repository
 
-git clone https://github.com/YOUR_USERNAME/Task-Management.git
+git clone https://github.com/SWaRANgi8728/Task-Management.git
 cd Task-Management
 
 
@@ -53,7 +53,7 @@ npm install
 node index.js
 
 
-Frontend:
+# Frontend:
 
 cd frontend
 npm install
@@ -64,7 +64,7 @@ Open frontend:
 Go to http://localhost:3000
 Backend API runs at http://localhost:5000
 
-##API Endpoints
+## API Endpoints
 
 GET /tasks – Get all tasks
 
