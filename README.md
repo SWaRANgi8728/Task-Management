@@ -52,7 +52,6 @@ npm start
 # Runs backend locally at http://localhost:5000
 
 **Frontend:**
-cd frontend
 npm install
 npm start
 # Runs frontend locally at http://localhost:3000
